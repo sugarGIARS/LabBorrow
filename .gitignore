@@ -1,0 +1,31 @@
+# ============================================================
+#  重要：不要把真实数据传上去！
+#  下面这些文件里有同学的真实姓名、学号、手机号、邮箱，
+#  公开仓库会被所有人看到，属于个人信息泄露。
+# ============================================================
+data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+backups/
+ui_smoke/
+selftest_report.txt
+
+# 编译/运行产生的临时文件与旧版本备份
+LabBorrow.exe.bak
+LabBorrow.exe.prev
+# 只排除「运行时复制到程序根目录」的副本，_lib 里的原始依赖库要保留（否则 clone 后无法编译）
+LabBorrow_Release/Basic.dll
+LabBorrow_Release/System.Data.SQLite.dll
+build.rsp
+_selftest_tmp/
+uismoke_tmp.exe
+selftest_tmp.exe
+
+# 原始版本备份（早期代码，不属于发布内容）
+_原始版本备份/
+
+# Windows
+Thumbs.db
+Desktop.ini
